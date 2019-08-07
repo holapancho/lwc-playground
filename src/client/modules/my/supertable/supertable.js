@@ -1,6 +1,8 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,api } from 'lwc';
 
 export default class App extends LightningElement {
+
+    @api elements;
 
     handleOnScroll(e){
         let scrollLeft = this.template.querySelector('tbody').scrollLeft;
