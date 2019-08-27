@@ -8,6 +8,8 @@
         "lwc-services": "^1.2.2"
     },
     "devDependencies": {
+        "@lwc/synthetic-shadow": "^1.0.0",
+        "@salesforce-ux/design-system": "^2.9.4",
         "husky": "^2.7.0",
         "lint-staged": "^8.2.1"
     },
