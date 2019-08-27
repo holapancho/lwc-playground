@@ -1,55 +1,55 @@
 {
-    "name": "my-app",
-    "description": "demo",
-    "version": "0.0.0",
-    "author": "frojas",
-    "bugs": "https://github.com/holapancho/lwc-playground/issues",
-    "dependencies": {
-        "lwc-services": "^1.2.2"
-    },
-    "devDependencies": {
-        "@lwc/synthetic-shadow": "^1.0.0",
-        "@salesforce-ux/design-system": "^2.9.4",
-        "husky": "^2.7.0",
-        "lint-staged": "^8.2.1"
-    },
-    "engines": {
-        "node": ">=10.0.0"
-    },
-    "homepage": "https://github.com/holapancho/lwc-playground",
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "keywords": [
-        "lwc"
-    ],
-    "license": "MIT",
-    "lint-staged": {
-        "**/*.{css,html,js,json,md,yaml,yml}": [
-            "prettier --write"
-        ],
-        "**/modules/**/*.js": [
-            "eslint"
-        ],
-        "*": [
-            "git add"
-        ]
-    },
-    "repository": "holapancho/lwc-playground",
-    "scripts": {
-        "build": "lwc-services build -m production",
-        "build:development": "lwc-services build",
-        "lint": "eslint ./src/**/*.js",
-        "prettier": "prettier --write '**/*.{css,html,js,json,md,yaml,yml}'",
-        "prettier:verify": "prettier --list-different '**/*.{css,html,js,json,md,yaml,yml}'",
-        "serve": "lwc-services serve",
-        "test:unit": "lwc-services test",
-        "test:unit:coverage": "lwc-services test --coverage",
-        "test:unit:debug": "lwc-services test --debug",
-        "test:unit:watch": "lwc-services test --watch",
-        "watch": "lwc-services watch",
-        "watch:production": "lwc-services watch --mode=production"
+  "name": "my-app",
+  "description": "demo",
+  "version": "0.0.0",
+  "author": "frojas",
+  "bugs": "https://github.com/holapancho/lwc-playground/issues",
+  "dependencies": {
+    "lwc-services": "^1.2.2"
+  },
+  "devDependencies": {
+    "@lwc/synthetic-shadow": "^1.0.0",
+    "@salesforce-ux/design-system": "^2.9.4",
+    "husky": "^2.7.0",
+    "lint-staged": "^8.2.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "homepage": "https://github.com/holapancho/lwc-playground",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "keywords": [
+    "lwc"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "**/*.{css,html,js,json,md,yaml,yml}": [
+      "prettier --write"
+    ],
+    "**/modules/**/*.js": [
+      "eslint"
+    ],
+    "*": [
+      "git add"
+    ]
+  },
+  "repository": "holapancho/lwc-playground",
+  "scripts": {
+    "build": "lwc-services build -m production",
+    "build:development": "lwc-services build",
+    "lint": "eslint ./src/**/*.js",
+    "prettier": "prettier --write '**/*.{css,html,js,json,md,yaml,yml}'",
+    "prettier:verify": "prettier --list-different '**/*.{css,html,js,json,md,yaml,yml}'",
+    "serve": "lwc-services serve",
+    "test:unit": "lwc-services test",
+    "test:unit:coverage": "lwc-services test --coverage",
+    "test:unit:debug": "lwc-services test --debug",
+    "test:unit:watch": "lwc-services test --watch",
+    "watch": "lwc-services watch",
+    "watch:production": "lwc-services watch --mode=production"
+  }
 }
