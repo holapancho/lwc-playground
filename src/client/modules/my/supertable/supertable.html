@@ -1,33 +1,30 @@
 <template>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Town</th>
-                <th>County</th>
-                <th>Age</th>
-                <th>Profession</th>
-                <th>Anual Income</th>
-                <th>Matital Status</th>
-                <th>Children</th>
-            </tr>
-        </thead>
-        <tbody onscroll={handleOnScroll}>
-            <template for:each={elements} for:item="element">
-                <tr key={element.key}>
-                    <td>{element.Name}</td>
-                    <td>{element.Town}</td>
-                    <td>{element.County}</td>
-                    <td>{element.Age}</td>
-                    <td>{element.Profession}</td>
-                    <td>{element.AnualIncome}</td>
-                    <td>{element.MatitalStatus}</td>
-                    <td>{element.Children}</td>
-                </tr>
-            </template>
-        </tbody>
-    </table>
-
-    
-
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Town</th>
+        <th scope="col">County</th>
+        <th scope="col">Age</th>
+        <th scope="col">Profession</th>
+        <th scope="col">Anual Income</th>
+        <th scope="col">Matital Status</th>
+        <th scope="col">Children</th>
+      </tr>
+    </thead>
+    <tbody onscroll="{handleOnScroll}">
+      <template for:each="{elements}" for:item="element">
+        <tr key="{element.key}">
+          <td>{element.Name}</td>
+          <td>{element.Town}</td>
+          <td>{element.County}</td>
+          <td>{element.Age}</td>
+          <td>{element.Profession}</td>
+          <td>{element.AnualIncome}</td>
+          <td>{element.MatitalStatus}</td>
+          <td>{element.Children}</td>
+        </tr>
+      </template>
+    </tbody>
+  </table>
 </template>
