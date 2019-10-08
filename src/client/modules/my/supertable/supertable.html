@@ -12,10 +12,10 @@
         <th>Children</th>
       </tr>
     </thead>
-    <tbody onscroll="{handleOnScroll}">
-      <template for:each="{elements}" for:item="element">
+    <tbody onscroll={handleOnScroll}>
+      <template for:each={elements} for:item="element">
         <!-- TODO fix key -->
-        <tr key="{element.Name}">
+        <tr key={element.Name}>
           <td>{element.Name}</td>
           <td>{element.Town}</td>
           <td>{element.County}</td>

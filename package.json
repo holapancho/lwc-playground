@@ -30,9 +30,6 @@
     "**/*.{css,html,js,json,md,yaml,yml}": [
       "prettier --write"
     ],
-    "**/modules/**/*.js": [
-      "eslint"
-    ],
     "*": [
       "git add"
     ]
